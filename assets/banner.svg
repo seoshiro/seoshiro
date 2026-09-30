@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="360" viewBox="0 0 1600 360" role="img" aria-labelledby="title desc">
+  <title id="title">seoshiro — selected work</title>
+  <desc id="desc">An original cream and terracotta banner with editorial typography and four connected geometric panels.</desc>
+  <rect width="1600" height="360" fill="#f3f0e8"/>
+  <path d="M0 359H1600" stroke="#d8d3c7" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="64" y="66" fill="#7c776c" font-size="20" letter-spacing="4">SELECTED WORK</text>
+    <text x="58" y="220" fill="#252923" font-size="132" font-weight="700" letter-spacing="-7">seoshiro</text>
+    <text x="66" y="294" fill="#585e53" font-size="26">Web tools &amp; visual workspaces</text>
+  </g>
+  <g transform="translate(1088 55)" stroke-width="2">
+    <path d="M120 5V245M0 125H370" stroke="#cec9bc"/>
+    <rect x="0" y="0" width="120" height="120" rx="3" fill="#e4e0d5" stroke="#c6c1b4"/>
+    <rect x="130" y="0" width="120" height="120" rx="3" fill="#c25131" stroke="#c25131"/>
+    <rect x="0" y="130" width="120" height="120" rx="3" fill="#e4e0d5" stroke="#c6c1b4"/>
+    <rect x="130" y="130" width="120" height="120" rx="3" fill="#68735e" stroke="#68735e"/>
+    <circle cx="60" cy="60" r="39" fill="none" stroke="#7f896f"/>
+    <path d="M154 28H226V92H154ZM154 71L178 47L202 71L216 57" fill="none" stroke="#f3f0e8"/>
+    <path d="M28 158H91M28 174H91M28 190H72M28 211H49" stroke="#7f896f"/>
+    <path d="M158 190L180 211L222 166" fill="none" stroke="#f3f0e8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M275 15H368M275 26H323M275 146H340M275 157H368M275 168H309" stroke="#cec9bc"/>
+    <circle cx="364" cy="242" r="7" fill="#c25131" stroke="none"/>
+  </g>
+</svg>
