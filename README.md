@@ -1,56 +1,66 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="seoshiro — selected work" width="100%" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
+  <img alt="seoshiro — Useful by design." src="assets/banner-light.png" width="1200">
+</picture>
 
-# Hi, I'm seoshiro.
+# Hi, I'm Beibars — seoshiro here.
 
-I build web tools for creative work and everyday workflows, with clear interfaces, careful data handling, and useful exports.
+I build browser tools for creative work and everyday problems. I care about interfaces that make the next step clear, local data you can keep, and exports you can use elsewhere.
 
-**[Selected projects](#selected-projects)** · **[More repositories](https://github.com/seoshiro?tab=repositories)**
+**[Portfolio](https://seoshiro.github.io/)** · **[Selected work](#selected-work)** · **[All repositories](https://github.com/seoshiro?tab=repositories)**
 
-## Selected projects
+## Selected work
 
-### SELVEDGE
+### 01 / PERCH
 
-**An apparel collection proofing studio.** Place artwork on the front and back, explore colorways, and compare named revisions. Export a collection PNG, a PDF visual proof, or an editable project. Files and editing stay in the browser.
+**Try a few layouts before moving a single chair.** Set up a rectangular room, resize furniture to match what you own, and see the same layout in 2D and 3D. Compare independent alternatives and export the plan, a 3D image, or a printable report.
 
-[![SELVEDGE workroom with an original illustrated tee, placement controls, colorways, and saved revisions](assets/selvedge.png)](https://seoshiro.github.io/selvedge-studio/)
+[![PERCH's actual studio: an original furnished 3D room beside its dimensioned 2D plan, furniture catalog, and fit checks](assets/perch.png)](https://seoshiro.github.io/perch-studio/)
 
-**[Open the studio ↗](https://seoshiro.github.io/selvedge-studio/)** · [Source](https://github.com/seoshiro/selvedge-studio) · [Product walkthrough](https://github.com/seoshiro/selvedge-studio#the-workroom)
+**[Open PERCH](https://seoshiro.github.io/perch-studio/)** · [Source](https://github.com/seoshiro/perch-studio) · [Case study](https://seoshiro.github.io/projects/perch.html)
 
-<sub>React · TypeScript · IndexedDB · Canvas · English / Русский / Қазақша</sub>
+<sub>React · TypeScript · Three.js · SVG · Local browser saves · EN / RU / KK</sub>
 
-### FORME
+### 02 / SELVEDGE
 
-**A visual research and direction studio.** Collect references, compose an editable moodboard, and turn its colors and typography into a design kit. Export PNG, CSS variables, design tokens, and portable projects.
+**One graphic, a whole collection.** An apparel workroom for artwork placement, garment colors, and named revision comparison. Make a collection PNG, a PDF visual proof, or an editable project to continue later.
 
-[![FORME moodboard editor with architectural references, color swatches, notes, and export controls](assets/forme.png)](https://forme-studio-coral.vercel.app/)
+[![Actual SELVEDGE workroom with an original After Hours tee illustration, artwork placement controls, and garment colorways](assets/selvedge.png)](https://seoshiro.github.io/selvedge-studio/)
 
-**[Open the studio ↗](https://forme-studio-coral.vercel.app/)** · [Source](https://github.com/seoshiro/forme-studio) · [Demo walkthrough](https://github.com/seoshiro/forme-studio#a-direction-in-motion)
+**[Open SELVEDGE](https://seoshiro.github.io/selvedge-studio/)** · [Source](https://github.com/seoshiro/selvedge-studio) · [Case study](https://seoshiro.github.io/projects/selvedge.html)
 
-<sub>React · TypeScript · Web Workers · IndexedDB · Canvas · Russian interface</sub>
+<sub>React · TypeScript · Canvas · IndexedDB · EN / RU / KK</sub>
 
-### GuideCheck
+### 03 / FORME
 
-Compare instruction revisions, record what a person actually tested, and keep corrections alongside review history. Browser workspace with portable backups; English, Russian, and Kazakh interfaces.
+**From references to a direction.** Gather images and notes, compose a moodboard, and turn its colors and typography into a design kit. Take away PNG, CSS variables, design tokens, and a portable project.
 
-**[Try GuideCheck ↗](https://seoshiro.github.io/guidecheck/)** · [Source](https://github.com/seoshiro/guidecheck)
+[![Actual FORME moodboard editor with architectural references, notes, color swatches, and typography](assets/forme.png)](https://forme-studio-coral.vercel.app/)
 
-### ArchiveGuard
+**[Open FORME](https://forme-studio-coral.vercel.app/)** · [Source](https://github.com/seoshiro/forme-studio) · [Case study](https://seoshiro.github.io/projects/forme.html)
 
-Review JPEG capture metadata against Google Photos JSON sidecars. Resolve conflicts explicitly and export new copies with an audit trail, while keeping original files untouched.
+<sub>React · TypeScript · Web Workers · IndexedDB · Russian interface</sub>
 
-**[Try ArchiveGuard ↗](https://seoshiro.github.io/archiveguard/)** · [Source](https://github.com/seoshiro/archiveguard)
+### Tools for careful work
 
-## In the code
+**[GuideCheck](https://seoshiro.github.io/guidecheck/)** — Compare instruction revisions and keep human review evidence attached to the steps it belongs to. Portable workspace backups; EN / RU / KK. [Source](https://github.com/seoshiro/guidecheck)
 
-**Interface:** React, TypeScript, authored CSS, Vite.<br>
-**Browser work:** IndexedDB, Web Workers, Canvas, portable file formats.<br>
+**[ArchiveGuard](https://seoshiro.github.io/archiveguard/)** — Compare JPEG capture metadata with Google Photos sidecars, resolve conflicts, and export checked copies with an audit trail. Original files stay untouched. [Source](https://github.com/seoshiro/archiveguard)
+
+## What I work with
+
+**Interfaces:** TypeScript, React, authored CSS, Vite.<br>
+**Browser tools:** Three.js, SVG, Canvas, IndexedDB, Web Workers, Web Crypto.<br>
 **Verification:** Playwright, unit tests, GitHub Actions.
 
-The project repositories include setup instructions, architecture notes, verification records, and practical limits.
+The repositories document how each tool works, how it was checked, and where its limits are. The [portfolio](https://seoshiro.github.io/) brings those decisions together in English, Russian, and Kazakh.
 
-## Earlier work
+<details>
+<summary><strong>Earlier engineering work</strong></summary>
 
-[**AituDesk**](https://github.com/seoshiro/aitudesk) — a college IT service desk with tickets, real-time chat, a multilingual knowledge base, and reporting.<br>
-[**AssetControl**](https://github.com/seoshiro/AssetControl) — equipment inventory, handovers, repairs, and financial reporting.
+[**AituDesk**](https://github.com/seoshiro/aitudesk) — A college IT service desk with tickets, real-time chat, a multilingual knowledge base, and reporting.
+
+[**AssetControl**](https://github.com/seoshiro/AssetControl) — Equipment inventory, handovers, repairs, and financial reporting.
+
+</details>

@@ -1,7 +1,8 @@
-# Profile assets
+# Profile asset provenance
 
-- `banner.svg`: original vector artwork authored for this profile. System fonts, no remote resources.
-- `selvedge.png`: unchanged [SELVEDGE workroom screenshot](https://github.com/seoshiro/selvedge-studio/blob/29b0441687f20498896f5d30b845fac5107f53fd/docs/gallery/02-studio.png). Original fictional apparel artwork; [project provenance](https://github.com/seoshiro/selvedge-studio/blob/main/docs/PROVENANCE.md).
-- `forme.png`: unchanged [FORME editor screenshot](https://github.com/seoshiro/forme-studio/blob/main/docs/media/editor.png). Fictional demo collection; photography and font credits remain in the [project asset notices](https://github.com/seoshiro/forme-studio/blob/main/ASSETS.md).
+- `banner-dark.png` / `banner-light.png`: original matching banners rasterized from the corresponding SVG sources. `scripts/build-banner.mjs` generates the vector artwork using the portfolio's original mathematical ribbon geometry. No third-party artwork, stock illustration, remote font, or image-generation service was used. Text uses system Arial/Helvetica.
+- `perch.png`: fresh capture of the [live PERCH studio](https://seoshiro.github.io/perch-studio/), verified against source commit `952559edaf2d036d9e2205d733cfbd6a220b5a78` on 1 October 2026. Furnished demo room and original parametric furniture. [MIT source and license](https://github.com/seoshiro/perch-studio), [third-party notices](https://github.com/seoshiro/perch-studio/blob/main/docs/THIRD_PARTY.md).
+- `selvedge.png`: the actual [SELVEDGE workroom screenshot](https://github.com/seoshiro/selvedge-studio/blob/29b0441687f20498896f5d30b845fac5107f53fd/docs/gallery/02-studio.png), with original fictional apparel artwork. [Project provenance](https://github.com/seoshiro/selvedge-studio/blob/main/docs/PROVENANCE.md).
+- `forme.png`: actual [FORME editor screenshot](https://github.com/seoshiro/forme-studio/blob/main/docs/media/editor.png), using the fictional demo collection. Photography and font credits remain in the [project asset notices](https://github.com/seoshiro/forme-studio/blob/main/ASSETS.md).
 
-These are product previews, not customer or client work. No user uploads or private workspace data are included.
+The three screenshots are proportionally resized within matching original dark frames, without cropping or changing product content. Original full-resolution captures are also retained in the portfolio's `docs/originals/`. These are independent product previews, not customer work. They contain no private files or user uploads.
