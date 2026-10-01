@@ -26,7 +26,7 @@ I build browser tools for creative work and everyday problems. I care about inte
 
 **One graphic, a whole collection.** An apparel workroom for artwork placement, garment colors, and named revision comparison. Make a collection PNG, a PDF visual proof, or an editable project to continue later.
 
-[![Actual SELVEDGE workroom with an original After Hours tee illustration, artwork placement controls, and garment colorways](assets/selvedge.png)](https://seoshiro.github.io/selvedge-studio/)
+[![Actual SELVEDGE workroom with an original After Hours tee illustration, artwork placement controls, and garment colorways](assets/selvedge-workroom.png)](https://seoshiro.github.io/selvedge-studio/)
 
 **[Open SELVEDGE](https://seoshiro.github.io/selvedge-studio/)** · [Source](https://github.com/seoshiro/selvedge-studio) · [Case study](https://seoshiro.github.io/projects/selvedge.html)
 
@@ -36,7 +36,7 @@ I build browser tools for creative work and everyday problems. I care about inte
 
 **From references to a direction.** Gather images and notes, compose a moodboard, and turn its colors and typography into a design kit. Take away PNG, CSS variables, design tokens, and a portable project.
 
-[![Actual FORME moodboard editor with architectural references, notes, color swatches, and typography](assets/forme.png)](https://forme-studio-coral.vercel.app/)
+[![Actual FORME moodboard editor with architectural references, notes, color swatches, and typography](assets/forme-moodboard.png)](https://forme-studio-coral.vercel.app/)
 
 **[Open FORME](https://forme-studio-coral.vercel.app/)** · [Source](https://github.com/seoshiro/forme-studio) · [Case study](https://seoshiro.github.io/projects/forme.html)
 
