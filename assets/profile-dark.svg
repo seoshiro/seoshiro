@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">seoshiro — Ideas into useful tools.</title>
+  <desc id="desc">An editorial masthead for browser tools and creative workspaces, with an index of PERCH, SELVEDGE, and FORME.</desc>
+  <rect width="1200" height="340" fill="#10151c"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="48" y="45" fill="#f1efe9" font-size="16" font-weight="700" letter-spacing="2">SEOSHIRO<tspan fill="#9eb4ff"> / </tspan></text>
+    <text x="1152" y="45" fill="#a9b3c1" font-size="12" letter-spacing="1.8" text-anchor="end">BROWSER TOOLS / CREATIVE WORKSPACES</text>
+    <path d="M48 66H1152M48 292H1152M796 92V267" fill="none" stroke="#35404e"/>
+    <text x="44" y="159" fill="#f1efe9" font-family="Georgia, 'Times New Roman', serif" font-size="78" letter-spacing="-3">Ideas into</text>
+    <text x="44" y="246" fill="#9eb4ff" font-family="Georgia, 'Times New Roman', serif" font-size="78" letter-spacing="-3">useful tools.</text>
+    <g font-size="12" letter-spacing="1.5" fill="#a9b3c1">
+      <text x="48" y="320">BEIBARS ILESKHAN</text>
+      <text x="1152" y="320" text-anchor="end">SELECTED WORK</text>
+    </g>
+    <g font-size="13">
+      <text x="830" y="111" fill="#a9b3c1" letter-spacing="1.6">THREE WAYS TO CREATE</text>
+      <text x="830" y="158" fill="#9eb4ff" font-size="12">01</text>
+      <text x="874" y="158" fill="#f1efe9" font-size="20" font-weight="700">PERCH</text>
+      <text x="1152" y="158" fill="#a9b3c1" text-anchor="end">Space</text>
+      <path d="M830 177H1152" stroke="#35404e"/>
+      <text x="830" y="207" fill="#9eb4ff" font-size="12">02</text>
+      <text x="874" y="207" fill="#f1efe9" font-size="20" font-weight="700">SELVEDGE</text>
+      <text x="1152" y="207" fill="#a9b3c1" text-anchor="end">Apparel</text>
+      <path d="M830 226H1152" stroke="#35404e"/>
+      <text x="830" y="256" fill="#9eb4ff" font-size="12">03</text>
+      <text x="874" y="256" fill="#f1efe9" font-size="20" font-weight="700">FORME</text>
+      <text x="1152" y="256" fill="#a9b3c1" text-anchor="end">Direction</text>
+    </g>
+  </g>
+</svg>
