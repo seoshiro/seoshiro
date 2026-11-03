@@ -1,7 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
-  <img alt="seoshiro — Ideas into useful tools. Browser tools and creative workspaces." src="assets/profile-light.svg" width="1200" height="340">
+  <img alt="seoshiro — Ideas into useful tools. Browser tools and creative workspaces." src="assets/profile-light.svg" width="1200">
 </picture>
 
 # Beibars Ileskhan
