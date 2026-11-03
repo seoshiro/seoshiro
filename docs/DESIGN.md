@@ -18,4 +18,4 @@ The [awesome-github-profile-readme collection](https://github.com/abhisheknaiidu
 
 The original main commit is `bf47f3d042203d4d0453873149f05ece76004e97`, retained in [backup/profile-before-editorial-2026-11-03](https://github.com/seoshiro/seoshiro/tree/backup/profile-before-editorial-2026-11-03).
 
-Run `node --test scripts/check-profile.mjs` to check repository-local image integrity, theme sources, descriptive alternatives, project destinations, supported markup, and original screenshot hashes. The existing read-only GitHub Actions job runs the same checks. Public visual checks cover desktop and narrow layouts; exact outcomes are recorded in the delivery evidence.
+Run `node --test scripts/check-profile.mjs` to check repository-local image integrity, theme sources, descriptive alternatives, project destinations, supported markup, and original screenshot hashes. The existing read-only GitHub Actions job runs the same checks. Public rendering, image loading, and in-page navigation are checked on GitHub. Browser and device coverage is reported with delivery evidence rather than inferred from static checks.
