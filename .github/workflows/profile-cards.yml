@@ -63,6 +63,7 @@ jobs:
           name: profile-cards
           path: .cards-new/*.svg
           retention-days: 1
+          include-hidden-files: true
           if-no-files-found: error
   publish:
     needs: generate
