@@ -28,3 +28,16 @@ test('All three projects retain verified Demo, Source and Case study destination
  for(const url of ['https://seoshiro.github.io/perch-studio/','https://seoshiro.github.io/selvedge-studio/','https://forme-studio-coral.vercel.app/'])assert.ok(readme.includes(url));
  assert.equal((readme.match(/Case study\]/g)||[]).length,3);
 });
+
+test('Accents are small complete GIFs and local icons remain inert',async()=>{
+ for(const [name,limit] of [['lotus',160000],['petal',40000]]) {
+  const gif=await readFile('assets/'+name+'-accent.gif');
+  assert.equal(gif.subarray(0,6).toString(),'GIF89a');assert.equal(gif.at(-1),0x3b);
+  assert.ok(gif.length<limit);assert.ok(gif.includes(Buffer.from('NETSCAPE2.0')));
+ }
+ for(const n of ['react','typescript','javascript','threedotjs','vite','html5','css','git','portfolio','telegram','email']) {
+  const svg=await readFile('assets/icons/'+n+'.svg','utf8');
+  assert.match(svg,/<svg/);assert.doesNotMatch(svg,/<script|<foreignObject|(?:href|src)=/i);
+ }
+ assert.match(readme,/prefers-reduced-motion: reduce/);
+});
