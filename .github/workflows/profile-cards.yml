@@ -1,0 +1,92 @@
+name: Update profile cards
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/profile-cards.yml']
+permissions: {}
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Generate public activity light
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          path: .cards-new/activity-light.svg
+          options: username=seoshiro&custom_title=GitHub%20activity&hide_rank=true&show_icons=true&include_all_commits=false&count_private=false&disable_animations=true&bg_color=F0F3F3&title_color=303C43&text_color=46565F&icon_color=6D858F&border_color=DCE3E5&border_radius=12
+          token: ${{ github.token }}
+      - name: Generate public activity dark
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          path: .cards-new/activity-dark.svg
+          options: username=seoshiro&custom_title=GitHub%20activity&hide_rank=true&show_icons=true&include_all_commits=false&count_private=false&disable_animations=true&bg_color=171F29&title_color=F2F0E9&text_color=C4CDD2&icon_color=A6BEC7&border_color=35434E&border_radius=12
+          token: ${{ github.token }}
+      - name: Generate public repository languages light
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          path: .cards-new/languages-light.svg
+          options: username=seoshiro&custom_title=Languages%20in%20my%20repositories&layout=compact&langs_count=6&disable_animations=true&bg_color=F0F3F3&title_color=303C43&text_color=46565F&border_color=DCE3E5&border_radius=12
+          token: ${{ github.token }}
+      - name: Generate public repository languages dark
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          core_version: '2.2.0'
+          fail_on_error: 'true'
+          path: .cards-new/languages-dark.svg
+          options: username=seoshiro&custom_title=Languages%20in%20my%20repositories&layout=compact&langs_count=6&disable_animations=true&bg_color=171F29&title_color=F2F0E9&text_color=C4CDD2&border_color=35434E&border_radius=12
+          token: ${{ github.token }}
+      - name: Validate candidates
+        run: node scripts/validate-cards.mjs .cards-new
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: profile-cards
+          path: .cards-new/*.svg
+          retention-days: 1
+          if-no-files-found: error
+  publish:
+    needs: generate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: profile-cards
+          path: .cards-new
+      - name: Validate before replacing the last good cards
+        run: node scripts/validate-cards.mjs .cards-new
+      - name: Publish four validated SVG files
+        run: |
+          mkdir -p assets/cards
+          cp .cards-new/activity-light.svg .cards-new/activity-dark.svg .cards-new/languages-light.svg .cards-new/languages-dark.svg assets/cards/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/activity-light.svg assets/cards/activity-dark.svg assets/cards/languages-light.svg assets/cards/languages-dark.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Update public profile cards"
+          git push origin HEAD:main
