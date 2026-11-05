@@ -1,21 +1,9 @@
-# Profile design and verification
+# LOTUS profile refresh
 
-## Editorial direction · 3 November 2026
+The profile continues the approved portfolio's ivory lotus, editorial typography, cool light, and restrained composition. The flower retains the five original semantic petals. The README follows cover → introduction → portfolio → selected projects → approach → contact. Identity, links, project descriptions and contact details remain readable Markdown.
 
-A compact portfolio index: an original ink/paper masthead with a cobalt accent, a short introduction, and three consistent single-column project stories. The real PERCH, SELVEDGE, and FORME previews are preserved byte for byte. Each story pairs the use case with concrete outputs, a live app, source, and case study. The introduction preserves the author's AI-assisted creation role and learning context.
+The exact previous README/assets are retained in [backup/before-lotus-profile-2026-11-05](https://github.com/seoshiro/seoshiro/tree/backup/before-lotus-profile-2026-11-05), at `5caba137b725700134494bd86b22b5fcbc24fd40`. Original profile fields were empty name, empty bio and empty website; original pins were aitudesk, ayqyn-local, perch-studio, seoshiro.github.io. The previous avatar is retained in the local delivery evidence.
 
-The [awesome-github-profile-readme collection](https://github.com/abhisheknaiidu/awesome-github-profile-readme), specifically its Minimalistic and Simple but Innovative categories, supplied the exploration starting point. Public examples inspected: [Caneco](https://github.com/caneco), [Gift Egwuenu](https://github.com/lauragift21/lauragift21), and [Nate Moore](https://github.com/natemoo-re/natemoo-re). The useful patterns were concise identity, direct navigation, and selected work. No example's branding, copy, artwork, or code was copied.
+The old /projects/perch.html, /projects/selvedge.html and /projects/forme.html URLs and FORME's Vercel demo are checked before deciding to retain them. Descriptions and screenshot provenance come from current project repositories. Telegram and email match the portfolio's public Contact section.
 
-## Content and boundaries
-
-- Project descriptions and outputs were checked against the current README files for perch-studio, selvedge-studio, forme-studio, guidecheck, archiveguard, aitudesk, and AssetControl.
-- The portfolio's English, Russian, and Kazakh versions and the three case-study links are retained.
-- No claimed proficiency level, user count, customer endorsement, contribution statistic, tracking counter, or external stats service is added.
-- Native headings, text links, and one-column images remain usable when the banner is unavailable. Theme-specific SVGs have a viewBox, explicit dimensions, titles, and descriptions. The mobile reading order follows the source order.
-- Changes are confined to this profile repository. The existing screenshots, prior banners, workflows, project repositories, and account settings are preserved.
-
-## Recovery and checks
-
-The original main commit is `bf47f3d042203d4d0453873149f05ece76004e97`, retained in [backup/profile-before-editorial-2026-11-03](https://github.com/seoshiro/seoshiro/tree/backup/profile-before-editorial-2026-11-03).
-
-Run `node --test scripts/check-profile.mjs` to check repository-local image integrity, theme sources, descriptive alternatives, project destinations, supported markup, and original screenshot hashes. The existing read-only GitHub Actions job runs the same checks. Public rendering, image loading, and in-page navigation are checked on GitHub. Browser and device coverage is reported with delivery evidence rather than inferred from static checks.
+Run `node --test scripts/check-profile.mjs` for local image, content and destination checks. The existing read-only GitHub Actions workflow runs these checks after publication. Actual browser coverage and screenshots are recorded in delivery evidence, with limitations stated separately. No profile analytics, external widgets, fabricated metrics, purchases, new generation credits, or changes to project code are introduced.

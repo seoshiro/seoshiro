@@ -1,96 +1,57 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
-  <img alt="seoshiro — Ideas into useful tools. Browser tools and creative workspaces." src="assets/profile-light.svg" width="1200">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/lotus-cover-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/lotus-cover-light.png">
+  <img src="assets/lotus-cover-light.png" alt="Beibars Ileskhan — Ideas bloom into useful tools. The portfolio’s five ivory lotus petals, softly lit against a cool background." width="1600">
 </picture>
 
 # Beibars Ileskhan
 
-**AI-assisted product creator · seoshiro**
+I create interactive websites and browser tools with AI. I shape the concept, visual direction, and user experience, then test and refine the result.
 
-I turn ideas into browser tools with AI, shaping the brief, visual direction, and workflow. I’m learning programming through the projects I make.
+I’m learning programming through my projects, building my understanding of how the code works along the way.
 
-I care about clear next steps, local data you can keep, and exports you can use elsewhere.
-
-**[Explore the portfolio ↗](https://seoshiro.github.io/)** · [Selected work](#selected-work) · [How I create](#how-i-create) · [Repositories](https://github.com/seoshiro?tab=repositories)
+**[Explore my portfolio ↗](https://seoshiro.github.io/)** · [Selected work](#selected-work) · [Approach](#approach) · [Contact](#contact)
 
 ## Selected work
 
-Three creative studios: plan a space, shape a collection, find a direction.
+### PERCH · Room & furnishing studio
 
-[**01 / PERCH**](#01--perch) &nbsp; · &nbsp; [**02 / SELVEDGE**](#02--selvedge) &nbsp; · &nbsp; [**03 / FORME**](#03--forme)
+[![Actual PERCH studio showing a furnished 3D room beside its dimensioned 2D plan and furniture controls](assets/perch-studio.png)](https://seoshiro.github.io/perch-studio/)
 
-### 01 / PERCH
+Compare room layouts before moving furniture. One shared model connects the dimensioned plan and 3D view; independent alternatives make layouts easy to compare.
 
-**Room planning, in 2D and 3D.**
+[**Demo ↗**](https://seoshiro.github.io/perch-studio/) · [Source](https://github.com/seoshiro/perch-studio) · [Case study](https://seoshiro.github.io/projects/perch.html)
 
-[![PERCH's actual studio: an original furnished 3D room beside its dimensioned 2D plan, furniture catalog, and fit checks](assets/perch.png)](https://seoshiro.github.io/perch-studio/)
+### SELVEDGE · Apparel workroom
 
-Set up a rectangular room, resize furniture to match what you own, and compare independent layouts before moving a single chair.
+[![Actual SELVEDGE workroom with After Hours demo artwork, garment colorways, and print placement controls](assets/selvedge-studio.png)](https://seoshiro.github.io/selvedge-studio/)
 
-**Take away:** a dimensioned plan, a 3D image, or a printable room report.
+Turn one graphic into a considered tee collection. Compare named revisions and export a collection image or PDF visual proof for the next conversation with a printer.
 
-**[Open PERCH ↗](https://seoshiro.github.io/perch-studio/)** · [Source](https://github.com/seoshiro/perch-studio) · [Case study](https://seoshiro.github.io/projects/perch.html)
+[**Demo ↗**](https://seoshiro.github.io/selvedge-studio/) · [Source](https://github.com/seoshiro/selvedge-studio) · [Case study](https://seoshiro.github.io/projects/selvedge.html)
 
-<sub>Three.js · SVG · Local browser saves · EN / RU / KK</sub>
+### FORME · Visual research studio
 
----
+[![Actual FORME editor with architectural references, editable notes, color swatches, and typography on a moodboard](assets/forme-studio.png)](https://forme-studio-coral.vercel.app/)
 
-### 02 / SELVEDGE
+Give scattered references a direction. Compose an editable moodboard, then carry its colors and typography into a design kit with CSS variables and design tokens.
 
-**One graphic. A considered collection.**
+[**Demo ↗**](https://forme-studio-coral.vercel.app/) · [Source](https://github.com/seoshiro/forme-studio) · [Case study](https://seoshiro.github.io/projects/forme.html)
 
-[![Actual SELVEDGE workroom with an original After Hours tee illustration, artwork placement controls, and garment colorways](assets/selvedge-workroom.png)](https://seoshiro.github.io/selvedge-studio/)
+Screenshots show the real apps with demo materials. Project repositories document capabilities and practical limits.
 
-Place artwork, explore garment colors, and compare named revisions in a browser workroom for tee collections.
+More browser tools: [**GuideCheck**](https://github.com/seoshiro/guidecheck) for instruction revisions and human review evidence; [**ArchiveGuard**](https://github.com/seoshiro/archiveguard) for photo metadata review and verified copy exports.
 
-**Take away:** a collection PNG, a PDF visual proof, or an editable project. The proof supports a conversation with a printer; it is not a manufacturing specification.
+## Approach
 
-**[Open SELVEDGE ↗](https://seoshiro.github.io/selvedge-studio/)** · [Source](https://github.com/seoshiro/selvedge-studio) · [Case study](https://seoshiro.github.io/projects/selvedge.html)
+**Define → create with AI → test → refine.**
 
-<sub>Canvas · IndexedDB · EN / RU / KK</sub>
+I start with the task and the experience someone should have. I use AI to help implement it, compare the result with the brief, and guide the next revision.
 
----
+**Project stack:** React, TypeScript, Vite, and authored CSS, with Three.js, SVG, Canvas, IndexedDB, and Web Workers where needed. These describe the projects, while I continue learning the technologies. Checks and limitations are documented in each repository.
 
-### 03 / FORME
+## Contact
 
-**From scattered references to a direction.**
+Have a website, interactive experience, or browser tool in mind?
 
-[![Actual FORME moodboard editor with architectural references, notes, color swatches, and typography](assets/forme-moodboard.png)](https://forme-studio-coral.vercel.app/)
-
-Collect images and notes, compose a moodboard, and turn its colors and typography into a reusable design kit.
-
-**Take away:** PNG, CSS variables, design tokens, or a portable project with the original images.
-
-**[Open FORME ↗](https://forme-studio-coral.vercel.app/)** · [Source](https://github.com/seoshiro/forme-studio) · [Case study](https://seoshiro.github.io/projects/forme.html)
-
-<sub>Web Workers · IndexedDB · Russian interface</sub>
-
-<sub>Portfolio projects, shown with demo materials in the actual apps. Each repository documents its scope and limits.</sub>
-
-## More work
-
-**[GuideCheck ↗](https://seoshiro.github.io/guidecheck/)** — Compare instruction revisions and keep human review evidence with the relevant steps. Portable workspace backups; EN / RU / KK. [Source](https://github.com/seoshiro/guidecheck)
-
-**[ArchiveGuard ↗](https://seoshiro.github.io/archiveguard/)** — Review JPEG capture metadata against Google Photos sidecars and export checked copies with an audit trail. Original files stay untouched. [Source](https://github.com/seoshiro/archiveguard)
-
-## How I create
-
-**Define → direct → try → refine.**
-
-I use AI for implementation and problem solving. I guide the product choices, try the workflows, and direct the next iteration.
-
-These projects are my learning ground for TypeScript, React, browser storage, and testing. The repositories use React, TypeScript, Vite, and authored CSS, with unit tests, Playwright, and GitHub Actions documented per project.
-
-<details>
-<summary><strong>Earlier projects</strong></summary>
-
-- [**AituDesk**](https://github.com/seoshiro/aitudesk) — A college IT service desk with tickets, real-time chat, a multilingual knowledge base, and reporting.
-- [**AssetControl**](https://github.com/seoshiro/AssetControl) — Equipment inventory, handovers, repairs, and financial reporting.
-
-</details>
-
----
-
-**[Explore the portfolio ↗](https://seoshiro.github.io/)** &nbsp; · &nbsp; [Browse all repositories](https://github.com/seoshiro?tab=repositories)  
-<sub>The portfolio is available in English, Russian, and Kazakh.</sub>
+[**Telegram ↗**](https://t.me/tserriednichs) · [Email](mailto:beibars.ileskhan2405@gmail.com) · [Portfolio ↗](https://seoshiro.github.io/)
