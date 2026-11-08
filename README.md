@@ -14,6 +14,21 @@ I’m learning programming through my projects, building my understanding of how
 
 ## Selected work
 
+### SAVE SLOT · Interactive 3D arcade
+
+**My main project: a shelf of game cartridges, a console, and six playable mini-games.**
+
+[![Actual SAVE SLOT browser experience: the interactive 3D cartridge shelf](assets/save-slot-shelf.webp)](https://seoshiro.github.io/save-slot/)
+
+Pick a cartridge and move from a procedural, real-time Three.js scene into a Canvas 2D mini-game. Built with TypeScript and Vite, with English and Russian interfaces, keyboard and touch controls, and progress that continues within the same tab.
+
+This is an AI-assisted personal project: I shaped the concept, visual direction, and interactions, then tested and refined the implementation. Reduced-motion and fallback paths are included; the repository documents the scope and limits.
+
+[**Play SAVE SLOT ↗**](https://seoshiro.github.io/save-slot/) · [Source](https://github.com/seoshiro/save-slot)
+
+<sub>Three.js · Canvas 2D · TypeScript · Vite · EN / RU</sub>
+
+
 ### PERCH · Room & furnishing studio
 
 [![Actual PERCH studio showing a furnished 3D room beside its dimensioned 2D plan and furniture controls](assets/perch-studio.png)](https://seoshiro.github.io/perch-studio/)
